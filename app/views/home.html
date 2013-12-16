@@ -1,0 +1,12 @@
+<div class="container">
+	<h2>{{pageName}}</h2>
+
+	<div>People Stack:</div>
+	<ul>
+		<li ng-repeat="p in people">{{p.name}}</li>
+	</ul>
+
+	Name: <input type="text" ng-model="newPerson.name" />
+	<br/><br/>
+	<button ng-click="add()">Add Person</button>
+<div/>
