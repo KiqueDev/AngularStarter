@@ -1,4 +1,7 @@
 AngularStarter
 ============
 
-A simple starter application using angular and node js
+A simple starter application using angular and node js  
+  
+Future:  
+add boostrap-ui  
