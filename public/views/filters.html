@@ -1,0 +1,13 @@
+<div class="container">
+	<h2>{{pageName}}</h2>
+
+	<input type="text" ng-model="search.$">
+	<br/><br/>
+	<table>
+		<tr ng-repeat="p in person | filter:search"> <!--  orderBy:'-name' | limitTo:5 -->
+			<td>{{p.name}}</td> <!-- <td>{{ p.name | lowercase }}</td> -->
+			<td>{{p.age}}</td>
+		</tr>
+	</table>
+
+<div/>

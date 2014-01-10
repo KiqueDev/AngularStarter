@@ -1,0 +1,54 @@
+<div class="container">
+	<h2>{{pageName}}</h2>
+
+	<h3>Templating</h3>
+	<div>Template: {{content}}</div>
+	<h3>Testing Data Binding</h3>
+	Sentence: <input data-ng-model="sentence">
+	<br/><br/>
+	<div data-custom-directive="sentence"></div>
+
+	<br/><br>---------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+
+	<h3>Re-Usable Directives with Class called "namer" and Attributes</h3>
+	<h3 class="namer" data-name="Contact" data-num="1"></h3>
+	<h3 class="namer" data-name="Contact" data-num="2"></h3>
+	<h3 class="namer" data-name="Contact" data-num="3"></h3>
+	<h3 class="namer" data-name="Contact" data-num="4"></h3>
+
+	<br/><br>---------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+	<h3>Re-Usable Directives with partial templating</h3>
+	<div class="yourProfile">
+		<h2>You: </h2> 
+		<profiler email="{{me.email}}" desc="{{me.description}}"><profiler>
+	</div>
+	<div class="devProfile">
+		<h2>Devs: </h2>
+		<div ng-repeat="d in devs">
+			<profiler email="{{d.email}}" desc="{{d.description}}"><profiler>
+		</div>
+	</div>
+
+	<br/><br>---------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+	<h3>Directives events listener</h3>
+	<div data-mouse-enter="loadMoreData()" data-mouse-leave="leaveSampleAttr" style="background:green; width:100px; height:100px">
+
+	</div>
+
+	<br/><br>---------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+	<h3>Directives to directvies communication (click one of them)</h3>
+	<superhero strength speed fire style="background:red; padding:20px">Superman</superhero>
+	<superhero speed style="background:red; padding:20px">Flash</superhero>
+	<superhero speed fire style="background:red; padding:20px">FastMan</superhero>
+
+	<br/><br>---------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+	<h3>Directives Isolated scopes (scope symbols: "@" means attributes, "=" means object, "&" means functions call from scope)</h3>
+	<person done="logToDo(todo)"></person>
+
+
+	<br/><br>---------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+	<h3>Directives Transclusion (append to the html from the template)</h3>
+	<trans>
+		<div style="background:red;">First Div</div>
+	</trans>
+<div/>

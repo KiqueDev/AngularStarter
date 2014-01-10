@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html ng-app="starterApp">
+<html data-ng-app="starterApp">
 <body>
 
 <header>
-	<directive-element data-title="Angular Starter Application"></directive-element>
+	<h1>Angular Starter Application</h1>
+	<a href="#/home">Home</a>
+	<a href="#/directives">Directives</a>
+	<a href="#/controllers">Controllers</a>
+	<a href="#/services">Services</a>
+	<a href="#/filters">Filters</a>
 <header>
 
 <!-- Route Rendering views -->
-<div ng-view=""></div>
+<div data-ng-view=""></div>
 
 <br/>
 <footer>
-	<a href="#/home">Home</a>
-	<a href="#/about">About</a>
-	<a href="#/contact">Contact Us</a>
+
 </footer>
 
-<script type="text/javascript" src="scripts/angular.min.js"></script>
-<script type="text/javascript" src="scripts/angular-route.min.js"></script>
+<script type="text/javascript" src="libs/angular.min.js"></script>
+<script type="text/javascript" src="libs/angular-route.min.js"></script>
 <script type="text/javascript" src="client.js"></script>
-<script type="text/javascript" src="directives/customDirective.js"></script>
+<script type="text/javascript" src="directives/customDirectives.js"></script>
+<script type="text/javascript" src="controllers/customControllers.js"></script>
+<script type="text/javascript" src="services/customServices.js"></script>
+<script type="text/javascript" src="filters/customFilters.js"></script>
 </body>
 </html>

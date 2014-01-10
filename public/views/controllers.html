@@ -1,0 +1,15 @@
+<div class="container">
+	<h2>{{pageName}}</h2>
+	
+	<h3>Sharing data between Controllers And Filtering</h3>
+	<div ng-controller="ctrl1">
+		Type 1: <input type="text" ng-model="data.message">
+		Result 1: {{data.message}} 
+	</div>
+
+	<div ng-controller="ctrl2">
+		Type 2: <input type="text" ng-model="data.message">
+		Result 2: {{data.message|reverse}} 
+	</div>
+
+</div>
